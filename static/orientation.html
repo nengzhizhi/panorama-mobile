@@ -1,0 +1,13 @@
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+zhongli
+<div id="coordinate">
+</div>
+
+<script type="text/javascript">
+
+function orientationListener(e){
+  var o = window.orientation;
+  $('#coordinate').text(o + ',' + e.alpha + ',' + e.beta + ',' + e.gamma);
+}
+window.addEventListener('deviceorientation', orientationListener, false);
+</script>
